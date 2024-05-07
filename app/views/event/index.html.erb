@@ -11,6 +11,13 @@
   </style>
 </head>
 <body>
+
+  <% if flash[:success] %>
+    <div class="alert alert-danger">
+      <%= flash[:success] %>
+    </div>
+  <% end %>
+  
   <div class="container mt-5">
     <div class="row">
       <div class="col">

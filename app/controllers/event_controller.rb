@@ -6,7 +6,7 @@ class EventController < ApplicationController
     @event = Event.new(event_params)
 
     if @event.save
-      redirect_to events_path, notice: 'event créé avec succès!'
+      redirect_to event_index_path, notice: 'event créé avec succès!'
       flash[:success] = "C'EST UN SUCCES!BRAVO!" #pour afficher le bandeau alerte (Voir html new)
     else
       render :new
@@ -28,5 +28,10 @@ class EventController < ApplicationController
   def destroy
   end
 
+  private
+
+  def event_params
+    params.require(:event).permit(:title, :description, :user_id, :start_date, :duration, :price, :location)
+  end
 
 end

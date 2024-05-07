@@ -1,24 +1,25 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[Click here for a very beautiful event website...](https://events240506-fragrant-frog-1429.fly.dev/)
 
-Things you may want to cover:
++ rails db:reset ultra important
 
-* Ruby version
+* Ruby version 3.2 / Rails version 7.1
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
++ Config
+```bash
+bundle install
+```
++ Just to make sure
+```bash
+rails db:migrate VERSION=0
+```
++ Database creation
+```bash
+rails db:migrate
+rails db:migrate:status  
+```
++ Database initialization
+```bash
+rails db:seed
+```
