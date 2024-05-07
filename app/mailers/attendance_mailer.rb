@@ -1,11 +1,9 @@
 class AttendanceMailer < ApplicationMailer
   default from: 'admin@events.com'
 
-  def welcome_email(user)
+  def attendance_email(user)
     @user = user
 
-    @url = 'https://events240506-fragrant-frog-1429.fly.dev/'
-
-    mail(to: @user.email, subject: 'Welcome!')
+    mail(to: @user.email, subject: 'Welcome to the event!')
   end
 end
