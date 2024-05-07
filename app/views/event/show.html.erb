@@ -1,2 +1,22 @@
-<h1>Event#show</h1>
-<p>Find me in app/views/event/show.html.erb</p>
+<body>
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header bg-primary text-white">
+            <h1 class="text-center">Event Details</h1>
+          </div>
+          <div class="card-body">
+            <p><strong>Title:</strong> <%= @event.title %></p>
+            <p><strong>Description:</strong> <%= @event.description %></p>
+            <p><strong>Price:</strong> <%= @event.price %></p>
+            <p><strong>Location:</strong> <%= @event.location %></p>
+            <p><strong>Start Date:</strong> <%= @event.start_date %></p>
+            <p><strong>Duration:</strong> <%= @event.duration %></p>
+            <p><strong>Event's Creator:</strong> <%= @event.user.first_name %></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

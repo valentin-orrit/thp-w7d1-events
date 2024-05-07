@@ -1,5 +1,5 @@
 class AttendanceMailer < ApplicationMailer
-  default from: 'admin@events.com'
+  default from: 'vorrit@gmail.com'
 
   def attendance_email(user)
     @user = user
