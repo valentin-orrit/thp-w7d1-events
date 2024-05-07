@@ -73,3 +73,7 @@ gem "letter_opener", "~> 1.10"
 gem "table_print", "~> 1.5"
 
 gem "dockerfile-rails", ">= 1.6", :group => :development
+
+gem "dotenv-rails", "~> 3.1"
+
+gem "dotenv", "~> 3.1"

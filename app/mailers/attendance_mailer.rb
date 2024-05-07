@@ -1,4 +1,4 @@
-class UserMailer < ApplicationMailer
+class AttendanceMailer < ApplicationMailer
   default from: 'admin@events.com'
 
   def welcome_email(user)
